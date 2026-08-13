@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     make \
+    sudo \
     build-essential \
     postgresql-client \
     docker.io \
