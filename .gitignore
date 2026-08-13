@@ -1,4 +1,6 @@
 **/**/.env
+**/**/.env.*
+!**/**/.env.example
 .DS_Store
 /.idea
 .claude/*
@@ -36,6 +38,27 @@ storybook-static
 test-results/
 dump.rdb
 .tinyb
+
+# Local credentials and secret material
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+credentials.json
+secrets.json
+
+# Local service data, dumps, and uploaded files
+*.sql.gz
+*.dump
+*.backup
+*.bak
+**/**/postgres-data/
+**/**/pgdata/
+**/**/redis-data/
+**/**/docker-volumes/
+**/**/uploads/
 
 .notes
 /data/

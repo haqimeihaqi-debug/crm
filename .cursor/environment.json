@@ -1,6 +1,6 @@
 {
-  "install": "yarn install",
-  "start": "(sudo service docker start || service docker start || true) && bash packages/twenty-utils/setup-dev-env.sh && npx nx database:reset twenty-server",
+  "install": "corepack enable && yarn install",
+  "start": "(sudo service docker start || service docker start || true) && bash packages/twenty-utils/setup-dev-env.sh --docker",
   "terminals": [
     {
       "name": "Development Server",
